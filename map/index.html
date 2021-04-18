@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+    <title>Map</title>
+</head>
+<body>
+    <div id="content">
+        <div id="map"></div>
+        <div id="info">
+            <div class="icons">
+                <div id="start-position"></div>
+                <span class="icon-description">&ThinSpace;&ThinSpace;&ThinSpace; is start position</span>
+            </div>
+            <div class="icons">
+                <img src="../icons/trash.png" id="clear-basket">
+                <span class="icon-description">&ThinSpace;&ThinSpace;&ThinSpace; is clear basket</span>
+            </div>
+            <div class="icons">
+                <img src="../icons/trash.png" id="full-basket">
+                <span class="icon-description">&ThinSpace;&ThinSpace;&ThinSpace; is full basket</span>
+            </div>
+        </div>
+        <button id="clear">Clear closest basket</button>
+    </div>
+    <script src="map.js"></script>
+    <script src="control.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#map
+{
+    width: 100%;
+    height: 100vh;
+}
+
+#content
+{
+    width: 100%;
+}
+
+.tab
+{
+    display: inline-flex;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin-left: -3px;
+}
+
+.active-tab
+{
+    border-bottom: red;
+}
+
+.tab:hover
+{
+    cursor:pointer;
+}
+
+.marker
+{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+#clear
+{
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    top: calc(100vh - 60px);
+    right: 5px;
+    z-index: 2;
+    background: white;
+    border: 1px solid black;
+}
+
+#info
+{
+    display: inline-block;
+    opacity: 0.7;
+    padding-left: 5px;
+    position: absolute;
+    top: 0;
+}
+
+.icons
+{
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+#start-position
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: #80e;
+    border: 5px solid #80e;
+    border-radius: 50%;
+}
+
+#clear-basket, #full-basket
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+#clear-basket
+{
+    border: 5px solid blue;
+}
+
+#full-basket
+{
+    border: 5px solid red;
+}
